@@ -39,18 +39,17 @@
                 @foreach($users as $users)
                     <tr>
                     <td>{{$users['id']}}</td>
-                        <td>{{ $users['name'] }}</td>
+                        <td><a href="{{ route('users.show', $users['id']) }}">{{ $users['name'] }}</a></td>
                         <td>{{ $users['birthday'] }}</td>
                         <td>{{ $users['email'] }}</td>
                        
                         <td>{{ $users['address'] }}</td>
                         <td><a href="{{ route('users.update', $users['id']) }}" class='btn btn-primary'>Update</a></td>
-                        <!-- <form action="{{ route('users.delete', $users['id']) }}" method="POST">
+                        <td><form action="{{ route('users.delete', $users['id']) }}" method="POST">
                             @csrf
-                            <input type="submit" value="">
-                        </form> -->
-                        <td><a href="{{ route('users.delete', $users['id']) }}" class='btn btn-primary' onClick="return confirm('Delete entry?')"
->Delete</a></td>
+                            <input type="submit" value="Delete" class='btn btn-danger'>
+                        </form></td>
+                        
                         
                     </tr>
                 @endforeach

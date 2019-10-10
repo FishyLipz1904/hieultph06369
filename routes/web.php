@@ -12,6 +12,8 @@
 */
 use App\Models\User;
 use App\Models\Post;
+use Faker\Generator as Faker;
+use Illuminate\Http\Request;
 Route::get('hello','HelloController@index');
 Route::get('/', function () {
     return view('welcome');
@@ -29,8 +31,6 @@ Route::get('starter', function () {
         ]);
 });
 
-use Faker\Generator as Faker;
-use Illuminate\Http\Request;
 
 Route::get('users', function () {
     
@@ -67,13 +67,15 @@ Route::get('users/update/{id}', function($id){
 Route::post('users/save', function(Request $request){
   
     $data = $request->except('_token');
-   
+    
     $data = User::find($request->id);
-   
+    
     $data->update($request->all());
 
         return redirect()->route('users.index');
 })->name('users.save');
+
+
 Route::get('posts', function () {
     $posts = factory(Post::class, 10)
     ->make()
