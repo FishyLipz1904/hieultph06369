@@ -1,0 +1,93 @@
+//for global css
+h2{
+  text-transform: uppercase;
+}
+
+
+.bg_images {
+  width: 370px;
+  padding: 50px 0;
+}
+header {
+  background-image: url("../assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.header__title {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.5em;
+  
+}
+.header__right {
+  padding: 150px 40px;
+}
+@media (max-width: 991px) {
+  .header__right {
+    padding: 0;
+    text-align: center;
+    
+  }
+  header{
+      height:800px;
+  }
+  .bg_images {
+   padding-right:12%;
+  }
+}
+.google-play{
+  padding-right:20px;
+}
+
+
+//Earn
+
+.earn{
+  padding: 50px 0;
+  
+}
+.earn__title , .travel__title{
+  padding-bottom: 60px;
+
+  h2{
+    font-weight:bold;
+    font-size:2.5em;
+   
+  }
+}
+.earn__travel-right, .proof__travel-left {
+  font-size: 1.1em;
+  font-weight:400;
+  letter-spacing: .01em;
+  line-height:30px;
+  padding-top:3%;
+}
+.proof__travel-left{
+  text-align:right;
+}
+.download{
+  height:70px;
+  font-weight: bold;
+  padding-top:4%;
+  border-radius: 25px;
+  font-size:1.5em;
+}
+.button{
+  padding: 50px 0;
+}
+.advertise__title{
+  font-weight:bold;
+  p{
+    font-size:1.4em;
+    font-weight:normal;
+  }
+}
+
+//carousel
+.carousel__title{
+  font-weight: 500;
+  font-size:1.7em;
+  padding:0;
+}
