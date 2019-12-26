@@ -1,0 +1,55 @@
+
+// .img-logo{
+//    width:150px;
+//    position: absolute;
+//    left: 50%;
+// }
+.header__title{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+  }
+  .header__subtitle{
+    text-decoration: none;
+    font-weight:bold;
+    color:white;
+    font-size:1.5em;
+  }
+.bg_images {
+    width: 370px;
+    padding: 50px 0;
+  }
+  header {
+    background-image: url("../assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  .header__title {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+    
+  }
+  .header__right {
+    padding: 150px 40px;
+  }
+  @media (max-width: 991px) {
+    .header__right {
+      padding: 0;
+      text-align: center;
+      
+    }
+    header{
+        height:800px;
+    }
+    .bg_images {
+     padding-right:12%;
+    }
+  }
+  .google-play{
+    padding-right:20px;
+  }
+  
+  

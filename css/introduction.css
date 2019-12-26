@@ -1,0 +1,37 @@
+.earn {
+  padding: 50px 0;
+}
+
+.earn__title, .travel__title {
+  padding-bottom: 60px;
+}
+
+.earn__title h2, .travel__title h2 {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.earn__travel-right, .proof__travel-left {
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: .01em;
+  line-height: 30px;
+  padding-top: 3%;
+}
+
+.proof__travel-left {
+  text-align: right;
+}
+
+.download {
+  height: 70px;
+  font-weight: bold;
+  padding-top: 4%;
+  border-radius: 25px;
+  font-size: 1.5em;
+}
+
+.button {
+  padding: 50px 0;
+}
+/*# sourceMappingURL=introduction.css.map */
