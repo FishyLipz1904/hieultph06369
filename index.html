@@ -1,377 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <script src="https://kit.fontawesome.com/562c4b61f5.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <div class="container-fluid">
-    <header class="row">
-      <!-- <div class="logo">
-        <img src="assets/images/logo.png" alt="logo" class='img-logo mx-auto'>
-      </div> -->
-
-      <div class="header header__left col-lg-4 offset-2">
-        <img src="./assets/images/phones.png" alt="bg-images" class="img-fluid bg_images" />
-        <div class="row app__button">
-          <a href="#">
-            <img src="assets/images/google-play.png" alt="" class="img-fluid google-play" />
-          </a>
-          <a href="#">
-            <img src="assets/images/appstore.png" class="img-fluid appstore" alt="" />
-          </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/562c4b61f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+        <a class="navbar-brand" href="#"> <img src="assets/images/logo.png" alt="" width="100px"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent-333"
+          aria-controls="navbarSupportedContent-333"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+              
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-hover"
+                id="navbarDropdownMenuLink-333"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown
+              </a>
+              <div
+                class="dropdown-menu dropdown-default"
+                aria-labelledby="navbarDropdownMenuLink-333"
+              >
+                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="#">Register</a>
+                <a class="dropdown-item" href="#">Forgot Password?</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item ">
+              <a class="nav-link waves-effect waves-light ">
+                <i class="fab fa-twitter "></i>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link waves-effect waves-light">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="nav-item  dropdown">
+              <a
+                class="nav-link dropdown"
+                id="navbarDropdownMenuLink-333"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right dropdown-default"
+                aria-labelledby="navbarDropdownMenuLink-333"
+              >
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="#">Forgot Password?</a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="header header__right col-lg-4">
-        <h2 class="header__title">
-          THE HAPPIEST WAY TO TRAVEL
-        </h2>
-        <p class='header__subtitle'>Get paid by planning your trip ahead</p>
-      </div>
+      </nav>
+      <!--/.Navbar -->
     </header>
-    
-    <main>
-       <!-- Begin main section row-->
-      <div class="main row">
-       
-        <div class="col-10 offset-1 earn">
-          <div class="earn__title">
-            <h2 class="text-center">Earn to travel</h2>
-          </div>
-          <div class="row">
-            <div class="earn__travel-plan col-lg-4 offset-1 ">
-              <img src="assets/images/icon1.svg" alt="" class='img-fluid'/>
-            </div>
-            <div class="earn__travel-right col-lg-6 offset-1">
-              <h2>
-                <span class="badge badge-info">1</span>Create a travel
-                plan
-              </h2>
-              <p>
-                Submit your destination, number of
-                travellers, activities of interest & travelling dates/
-                duration to get +10 TriipMiles - the universal travel currency
-              </p>
-            </div>
-          </div>
+
+    <div class="container-fluid">
+      <div class="row tour">
+        <div class="tour__title col-lg-6 col-xs-12 title-left">
+          <h2>Most populars Tours</h2>
+          <small>Các địa điểm du lịch phổ biến của Việt Nam</small>
         </div>
-        <div class="col-10 offset-1 proof">
-          <div class="row ">
-
-
-            <div class="proof__travel-left col-lg-4 offset-1">
-              <h2>
-                Proof of travel<span class="badge badge-info">2</span>
-              </h2>
-              <p>
-                Submit your selfie, boarding pass, hotel booking receipt, etc. to get +264 TriipMiles
-              </p>
-            </div>
-            <div class="proof__travel-right col-lg-6 offset-1 offset-xs-0 ">
-              <img src="assets/images/pot.svg" alt="" class='img-fluid'/>
-            </div>
-          </div>
-          
+        <div class="tour__options col-lg-6 col-xs-12 title-right">
+          <i class="fas fa-arrow-right arrow nav-right"></i>
+          <i class="fas fa-arrow-left arrow nav-left"></i>
+          <span class="view-options float-right"
+            ><a href="#">View all tours</a></span
+          >
         </div>
-        <div class="col-10 offset-1 travel">
-          <div class="travel__title">
-            <h2 class="text-center">Travel to earn</h2>
-          </div>
-          <div class="row">
-            <div class="earn__travel-plan col-lg-4 offset-1 ">
-              <img src="assets/images/icon3.svg" alt="" class='img-fluid'/>
-            </div>
-            <div class="earn__travel-right col-lg-6 offset-1">
+        <div class="owl-carousel owl-tour owl-reponsive">
+          <!-- Start Carousel item -->
+          <div
+            class="carousel_item"
+            style='background-image:
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("assets/images/db2fe9f2b8b251ec08a3.jpg")'
+          >
+            <span
+              class="carousel__title col-lg-10 col-md-10 col-sm-12 col-xs-12"
+            >
               <h2>
-                <span class="badge badge-info">3</span>BOOKING
+                Lăng chủ tịch Hồ Chí Minh
+                <i class="fas fa-bookmark bookmark"></i>
               </h2>
+            </span>
+            <div class="carousel__description">
+              <small class="col-lg-6 col-xs-6">Hà Nội</small>
               <p>
-                Receive a 5% rebate in our universal travel currency TriipMiles for each accommdation reservation.
-                Proceed booking for local experience and travel services at the best price.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
+                vel.
               </p>
+              <a href="" class="btn btn-danger">Tìm hiểu thêm</a>
+
+              <!-- <span class='star carousel__rating col-lg-6 col-xs-6'>
+                  <i class="fas fa-star rating  float-right"></i>
+                  <i class="fas fa-star rating  float-right"></i>
+                  <i class="fas fa-star rating  float-right"></i>
+                  <i class="fas fa-star rating  float-right"></i>
+                  <i class="fas fa-star rating  float-right"></i>
+                </span> -->
             </div>
           </div>
-        </div>
-        <div class="col-10 offset-1 proof">
-          <div class="row ">
-
-
-            <div class="proof__travel-left col-lg-4 offset-1">
+          <div
+            class="carousel_item"
+            style='background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg")'
+          >
+            <span
+              class="carousel__title col-lg-10 col-md-10 col-sm-12 col-xs-12"
+            >
               <h2>
-                Earn more<span class="badge badge-info">4</span>
+                Lăng chủ tịch Hồ Chí Minh
+                <i class="fas fa-bookmark bookmark"></i>
               </h2>
+            </span>
+            <div class="carousel__description">
+              <small class="col-lg-6 col-xs-6">Hà Nội</small>
               <p>
-                By reviewing, rating and/or promoting experiences you completed
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
+                vel.
               </p>
-            </div>
-            <div class="proof__travel-right col-lg-6 offset-1 offset-xs-0 ">
-              <img src="assets/images/icon4.svg" alt="" class='img-fluid' />
+              <a href="" class="btn btn-danger">Tìm hiểu thêm</a>
+
+              <!-- <span class='star carousel__rating col-lg-6 col-xs-6'>
+                <i class="fas fa-star rating  float-right"></i>
+                <i class="fas fa-star rating  float-right"></i>
+                <i class="fas fa-star rating  float-right"></i>
+                <i class="fas fa-star rating  float-right"></i>
+                <i class="fas fa-star rating  float-right"></i>
+              </span> -->
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto button">
-            <h2 class="btn btn-block btn-info text-center download" >Download the app</h2 >
-          </div>
-          
-        </div>
-        <!-- End main section row-->
-    </main>
-      <div class="row advertise">
-        <div class="col-lg-10 offset-1 ">
-
-          <!-- Start advertise title -->
-
-          <div class="advertise__title">
-            <h2 class="text-center">Enjoy best price</h2>
-            <p class="text-center">28.8 mil rooms in 229 countries</p>
-          </div>
-
-           <!-- End advertise title -->
-
-           <!-- Start initial carousel-->
-           <div class="owl-carousel owl-reponsive">
-             <!-- Start Carousel item -->
-            
-            <div>
-              
-              <img src="assets/images/diem-du-lich-ha-noi-11.jpg" alt="diem-du-lich-ha-noi-11.jpg" class='img-fluid img-carousel'>
-              <span class="carousel__title col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                Chùa một cột 
-                
-              </span>
-              <span class='star carousel__rating col-lg-2 col-md-2 col-sm-12 col-xs-12'>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-              </span>
-              <p class='destination'>Hà Nội</p>
-             
-              <a href="#" class='carousel__button btn btn-info btn-block'>Tìm hiểu thêm</a>
-              
-            </div>
-            
-            <!-- End Carousel item -->
-            <div>
-              <img src="assets/images/d2654358-du-lịch-ha-noi.jpg" alt="d2654358-du-lịch-ha-noi.jpg" class='img-fluid img-carousel'>
-              <span class="carousel__title col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                Chòi canh gác 
-                <!-- Em đíu nhớ tên ok? Hieu Le 25-12 -->
-                
-              </span>
-              <span class='star carousel__rating col-lg-2 col-md-2 col-sm-12 col-xs-12'>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-              </span>
-              <p class='destination'>Hà Nội</p>
-             
-              <a href="#" class='carousel__button btn btn-info btn-block'>Tìm hiểu thêm</a>
-            </div>
-            <div>
-              <img src="assets/images/ha-noi-qua-ong-kinh-dan-du-lich-bui-4.jpg" alt="diem-du-lich-ha-noi-11.jpg" class='img-fluid img-carousel'>
-              <span class="carousel__title col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                Đền Ngọc Sơn 
-                
-              </span>
-             
-              <span class='star carousel__rating col-lg-2 col-md-2 col-sm-12 col-xs-12'>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>
-                <i class="fas fa-star rating  float-right"></i>   
-              </span>
-              
-              <p class='destination'>Hà Nội</p>
-             
-              <a href="#" class='carousel__button btn btn-info btn-block'>Tìm hiểu thêm</a>
-            </div>
-          </div>
-          <!-- End initial carousel-->
+          <!-- End carousel item-->
         </div>
       </div>
-        <div class="mx-auto row destination">
-          <h2 class="text-center col-12 destination__title">6000 Tours in 100 countries</h2>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <div class="row destination">
+        <div class="destination__title col-lg-6 col-xs-12 title-left">
+          <h2>Top Destination</h2>
+          <small>Đây là các địa điểm du lịch được yêu thích nhất</small>
+        </div>
+        <div
+          class="destination__options col-lg-6 col-xs-12 title-right float-right"
+        >
+          <span class="view-options float-right"
+            ><a href="#">Xem danh sách các điểm du lịch</a></span
+          >
+        </div>
+        <div class="row destination__display">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/ha noi ve dem.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/tour-du-lich-ha-noi-city.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/tour-da-nang-ha-noi-tuan-nguyen-travel-6-1480582312.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/Ha-Noi-dep-la-lung-ve-dem-1-bookin-bookin.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/ha-noi-qua-ong-kinh-dan-du-lich-bui-4.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/dia-diem-vui-choi-o-da-nang-ve-dem-cua-gioi-tre.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/nha-hat-lon(5).jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 display__card">
             <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/ThumbnailImage.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/Tourism-Hanoi-at-Night.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/trung-tam-thanh-pho-ha-noi-54b898268076c.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/tour-du-lich-ha-noi-city.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <a href="#">
-            <span class='destination__name'>
-              Hanoi
-            </span>
-            <img src="assets/images/anh5.jpg" 
-            alt="Thaophuongnguyen-175328105337-HNX-4.jpg " class='img-fluid img-destination'>
-          </a>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mx-auto button">
-            <h2 class="btn btn-block btn-info text-center download" >See more tour</h2 >
-          </div>
-      </div>
-      <footer>
-        <div class="footer-seperation row"></div>
-        <div class="container">
-        <div class="row footer">
-         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-1">
-            <img src="assets/images/logo.png" alt="dee">
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-2">
-            <h2>About Dee</h2>
-              <a href="#">Quick link1</a>
-              <a href="#">Quick link2</a>
-              <a href="#">Quick link3</a>
-              <a href="#">Quick link4</a>
-              <a href="#">Quick link5</a>
-           
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-3 ">
-            <h2>Our social platform</h2>
-              <a href="#" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fab fa-pinterest"></i></a>
-              <a href="#" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fab fa-youtube"></i></a>
-              <a href="#" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fab fa-google-plus"></i></a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-4">
-            <h2>Mobile App</h2>
-            <a href="#"><img src="assets/images/appstore.png" alt=""></a>
-            <a href="#"><img src="assets/images/google-play.png" alt=""></a>
+              <span class="destination__name w-100">
+                <h2>Hanoi</h2>
+                <p>45 Tours | 62 Visitors</p>
+              </span>
+              <img
+                src="assets/images/a9adf7055a87bc5ac235fa2b3cad177b.jpg"
+                alt="a9adf7055a87bc5ac235fa2b3cad177b.jpg "
+                class="img-fluid img-destination"
+              />
+            </a>
           </div>
         </div>
       </div>
-      </footer>
+      <div class="row booking">
+        <div class="col-lg-3 booking__destination row">
+          <span class="booking__title w-100">Destionation</span>
+          <select name="select" id="select" class="w-75">
+            <option value="placeholder">Placeholder</option>
+            <option value="placeholder">Placeholder</option>
+          </select>
+        </div>
+        <div class="col-lg-2 booking__checkin">
+          <span class="booking__title w-100">Checkin</span>
+          <input type="date" name="" id="" class="w-100" />
+        </div>
+        <div class="col-lg-2 booking__checkout">
+          <span class="booking__title w-100">Checkout</span>
+          <input type="date" name="" id="" class="w-100" />
+        </div>
+        <div class="col-lg-2 booking__adult">
+          <span class="booking__title w-100">Adult</span>
+          <input type="number" name="" id="" class="w-75" />
+        </div>
 
-    
-  </div>
-</body>
+        <div class="col-lg-2 booking__children w-100">
+          <span class="booking__title w-100">Children</span>
+          <input type="number" name="" id="" class="w-75" />
+        </div>
+        <div class="col-lg-1 submit w-100">
+          <button type="submit">
+            <i class="fas fa-search search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row stories">
+        <div class="stories__title col-lg-6 col-xs-12 title-left">
+          <h2>Amazing Stories</h2>
+          <small>Xem lại các trải nghiệm đáng nhớ nhất</small>
+        </div>
+        <div class="stories__options col-lg-6 col-xs-12 title-right">
+          <i class="fas fa-arrow-right arrow nav-arrow-right"></i>
+          <i class="fas fa-arrow-left arrow nav-arrow-left"></i>
+        </div>
+        <div class="stories__display w-100">
+          <div class="owl-carousel owl-story owl-reponsive">
+            <!-- Start Carousel item -->
+
+            <div class="stories__card">
+              <a href="#">
+                <img
+                  src="assets/images/nha-hat-lon(5).jpg"
+                  alt=""
+                  class="stories__img"
+                />
+
+                <span class="stories__name w-100">
+                  <h2>Hanoi</h2>
+                </span>
+              </a>
+            </div>
+            <div class="stories__card">
+              <a href="#">
+                <img
+                  src="assets/images/Thaophuongnguyen-175328105337-HNX-4.jpg"
+                  alt=""
+                  class="stories__img"
+                />
+
+                <span class="stories__name w-100">
+                  <h2>Hanoi</h2>
+                </span>
+              </a>
+            </div>
+
+            <!-- End carousel item-->
+          </div>
+        </div>
+      </div>
+      <div class="row blogs">
+        <div class="blogs__title col-lg-6 col-xs-12 title-left">
+          <h2>Recent Blog Post</h2>
+          <small>Các bài viết mới từ hướng dẫn viên</small>
+        </div>
+        <div class="blogs__options col-lg-6 col-xs-12 title-right">
+          <span class="view-options float-right"
+            ><a href="#">Xem tất cả</a></span
+          >
+        </div>
+
+        <div class="blogs__display row">
+          <div class="col-lg-4">
+            <a href="">
+              <img
+                src="assets/images/ThumbnailImage.jpg"
+                alt=""
+                class="img-fluid img-blogs"
+              />
+              <span class="blogs__name w-100">
+                <h5>Đây là 1 bài viết demo</h5>
+              </span>
+              <div class="create-by row w-100">
+                <img
+                  src="assets/images/icon.jpg"
+                  alt="icon"
+                  class="avatar rounded-circle"
+                />
+
+                <p>Created by Le Hieu at 17:13:00pm</p>
+              </div>
+              <p class="blogs__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                praesentium veniam quod illo velit? Ea quas earum optio? Sequi,
+                ex?
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="">
+              <img
+                src="assets/images/ThumbnailImage.jpg"
+                alt=""
+                class="img-fluid img-blogs"
+              />
+              <span class="blogs__name w-100">
+                <h5>Đây là 1 bài viết demo</h5>
+              </span>
+              <div class="create-by row w-100">
+                <img
+                  src="assets/images/icon.jpg"
+                  alt="icon"
+                  class="avatar rounded-circle"
+                />
+
+                <p>Created by Le Hieu at 17:13:00pm</p>
+              </div>
+              <p class="blogs__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                praesentium veniam quod illo velit? Ea quas earum optio? Sequi,
+                ex?
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="">
+              <img
+                src="assets/images/ThumbnailImage.jpg"
+                alt=""
+                class="img-fluid img-blogs"
+              />
+              <span class="blogs__name w-100">
+                <h5>Đây là 1 bài viết demo</h5>
+              </span>
+              <div class="create-by row w-100">
+                <img
+                  src="assets/images/icon.jpg"
+                  alt="icon"
+                  class="avatar rounded-circle"
+                />
+
+                <p>Created by Le Hieu at 17:13:00pm</p>
+              </div>
+              <p class="blogs__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                praesentium veniam quod illo velit? Ea quas earum optio? Sequi,
+                ex?
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row footer"></div>
+    </div>
+  </body>
+</html>
 <script src="./assets/bootstrap/vendors/jquery.min.js"></script>
 <script src="./assets/bootstrap/owl/owl.carousel.js"></script>
 <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-       0:{
-            items:1
-        },
-        900:{
-            items:2
-        },
-        
-        
-    }
-})
+  $(".owl-tour").owlCarousel({
+    loop: true,
 
+    margin: 10,
+    nav: true,
+    navigation: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      1000: {
+        items: 2
+      }
+    }
+  });
+
+  $(".nav-right").click(function() {
+    $(".owl-tour").trigger("next.owl.carousel");
+  });
+  $(".nav-left").click(function() {
+    $(".owl-tour").trigger("prev.owl.carousel", [300]);
+  });
+
+  $(".owl-story").owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 20,
+    nav: true,
+    navigation: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      1000: {
+        items: 5
+      }
+    }
+  });
+
+  $(".nav-arrow-right").click(function() {
+    $(".owl-story").trigger("next.owl.carousel");
+  });
+  $(".nav-arrow-left").click(function() {
+    $(".owl-story").trigger("prev.owl.carousel", [300]);
+  });
 </script>
-</html>
