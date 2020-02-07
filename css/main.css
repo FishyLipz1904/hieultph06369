@@ -378,6 +378,7 @@ a:hover {
 .footer {
   background: #151515;
   opacity: .85;
+  margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
